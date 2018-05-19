@@ -8,17 +8,22 @@ const Score = function (bird, pipes, c, ctx) {
 }
 
 Score.prototype.update = function (pipes) {
-    if(this.passedPipe(pipes)){
-        this.scored = true;
-    }
-    
+    this.pipes.forEach((pipes, i) => {
+        //bird passed pipe
+        if (this.bird.x > pipes.xpos + pipes.width &&
+        !pipes.passed) {
+            // console.log('Passed Pipe');
+            pipes.passed = true;
+            this.score += 0.5;
+        }
+        
+    });
 }
 
-Score.prototype.passedPipe = function(pipes) {
-this.pipes.forEach(pipe => {
-        //bird passed pipe
-        if (this.bird.x > pipe.xpos + pipe.width) {
-            console.log('Passed Pipe');
-        }
-    })
-}
+Score.prototype.render = function(){
+    this.ctx.save();
+    this.ctx.font = "24px Arial";
+    this.ctx.fillText("Score: " + this.score, 8, 20);
+    this.ctx.restore();
+};
+
