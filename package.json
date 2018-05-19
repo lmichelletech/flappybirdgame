@@ -12,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "reload": "^2.2.2"
+  },
+  "dependencies": {
+    "restart": "^0.1.0"
   }
 }

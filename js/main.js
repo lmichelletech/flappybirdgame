@@ -3,6 +3,7 @@
 //the way I used it hear
 window.onload = function () {
     const c = document.getElementById('canvas');
+    newgame = document.getElementById('newgame');
 
     //avoid sizing canvas with css. Use javascript.
     c.width = window.innerWidth;
@@ -14,11 +15,14 @@ window.onload = function () {
     const environment = new Environment(c, ctx);
     const bird = new Bird(250, 300, ctx);
     const pipes = [];
-
+    let pipeSet = generateRandomPipes(ctx, c.width, c.height);
+    pipes.push(pipeSet.top, pipeSet.bottom);
     setInterval(function () {
         let pipeSet = generateRandomPipes(ctx, c.width, c.height);
         pipes.push(pipeSet.top, pipeSet.bottom);
-    }, 3000);
+    }, 2600);
+
+    const score = new Score(bird, pipes, c, ctx);
 
     gameLoop();
 
@@ -26,80 +30,46 @@ window.onload = function () {
        Main Game Loop
     */
     function gameLoop() {
-        ctx.fillRect(0, 0, c.width, c.height);
-        environment.update();
+        bird.update(pipes);
+
+        if (!bird.dead) {
+            environment.update();
+            
+            pipes.forEach(function(pipe1){
+                pipe1.update();
+            });
+        }
+
         environment.render();
-        pipes.forEach(function (pipe1) {
-            pipe1.update();
+        pipes.forEach(function(pipe1){
             pipe1.render();
         });
-
-        bird.update();
         bird.render();
-        if (detectCollisions(bird, pipes)) {
-            alert("You Lose!");
-            window.location = '/';
-        }
+        if (bird.dead){
+            drawGameOver(ctx, c);
+            newgame.style.display = 'inline';
+        }  
+        
         window.requestAnimationFrame(gameLoop);
     }
 };
 
 function generateRandomPipes(ctx, canvasWidth, canvasHeight) {
     let lengthTop = Math.round(Math.random() * 200 + 50);
-    let lengthBottom = canvasHeight - 300 - lengthTop;
+    let lengthBottom = canvasHeight - 200 - lengthTop;
     let returnVal = { };
     returnVal.top = new Pipe(canvasWidth, -5, lengthTop, 4, ctx);
     returnVal.bottom = new Pipe(canvasWidth, canvasHeight + 5 - lengthBottom, lengthBottom, 4, ctx);
     return returnVal;
 }
 
-function detectCollisions(bird, pipes) {
-    for (var i = 0; i < pipes.length; i++) {
-        let e = pipes[i]
-        let highPipe = e.ypos <= 0;
-        let x0 = e.xpos, x1 = e.xpos + e.width;
-        if (highPipe) {
-            let y0 = e.ypos + e.length;
-            let alpha = bird.x;
-            let beta = bird.y - bird.height / 2;
-            if (alpha > x0 && alpha < x1 && beta < y0) {
-                return true;
-            }
-        }
-        else {
-            let y2 = e.ypos;
-            let a = bird.x;
-            let b = bird.y + bird.height / 2;
-            if (a > x0 && a < x1 && b > y2) return true;
-        }
-    };
-    return false;
+function drawGameOver(ctx, c) {
+    ctx.font = "30px Verdana";
+    ctx.textAlign = "center";
+    ctx.fillText("Game Over!!", c.width / 2, c.height / 2);
 }
 
-//x, y, w, h
-// ctx.fillRect(20, 20, 20, 20);
-// ctx.fillStyle = "#9900cc";
-// ctx.fillRect(100, 20, 20, 20);
-// ctx.fillStyle = "#00ff00";
-// ctx.fillRect(200, 20, 20, 20);
-
-
-// ctx.strokeRect(300, 20, 20, 20);
-// ctx.strokeStyle = "#ff000";
-// ctx.strokeRect(400, 20, 20, 20);
-
-//can load the image after you put everything inside
-//window onlaod event by using the followung line of code
-//ctx.drawImage(document.getElementById('bird1'), 500, 20);
-
-//if you do not use window onload event hack to
-//show images and use the real way then
-//need to have server running for this to show.
-//loading is asynchronous so the next line won't work.
-// const bird1 = new Image();
-// bird1.src = '../images/bird1.png';
-// need all of the following for image to load first
-// then use a callback function to draw it.
-// ctx.drawImage(bird1, 500, 20);
-// };
+function newGame(){
+    window.location.reload();
+}
 
