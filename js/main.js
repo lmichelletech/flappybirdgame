@@ -13,10 +13,11 @@ window.onload = function () {
     const ctx = c.getContext('2d');
     
     const environment = new Environment(c, ctx);
+    const ground = new Ground(c, ctx);
     const bird = new Bird(300, 300, ctx);
-    const theme = new Audio();
-    theme.src = "../sounds/theme.mp3";
-    
+    const scoresound = new Sound("../sounds/score.wav");
+    loadPipes();
+    const theme = new Sound("../sounds/theme.mp3");
     const pipes = [];
     let pipeSet = generateRandomPipes(ctx, c.width, c.height);
     pipes.push(pipeSet.top, pipeSet.bottom);
@@ -24,11 +25,11 @@ window.onload = function () {
         let pipeSet = generateRandomPipes(ctx, c.width, c.height);
         pipes.push(pipeSet.top, pipeSet.bottom);
     }, 2600);
-
     const score = new Score(bird, pipes, c, ctx);
 
     gameLoop();
 
+    
     /*
        Main Game Loop
     */
@@ -37,27 +38,27 @@ window.onload = function () {
 
         if (!bird.dead) {
             environment.update();
-    
+            ground.update();
             pipes.forEach(function(pipe1){
                 pipe1.update();
-                score.update(pipes);
+                score.update(pipes, scoresound);
             });
             
             theme.play();
         }
 
         environment.render();
+        ground.render();
         pipes.forEach(function(pipe1){
             pipe1.render();
         });
         bird.render();
         score.render();
+        
         if (bird.dead){
-            theme.pause();
-            theme.currentTime = 0;
+            theme.stop();
             drawGameOver(ctx, c);
             newgame.style.display = 'inline';
-            
         } 
          
         
@@ -69,8 +70,10 @@ function generateRandomPipes(ctx, canvasWidth, canvasHeight) {
     let lengthTop = Math.round(Math.random() * 200 + 50);
     let lengthBottom = canvasHeight - 250 - lengthTop;
     let returnVal = { };
-    returnVal.top = new Pipe(canvasWidth, -5, lengthTop, 4, ctx);
-    returnVal.bottom = new Pipe(canvasWidth, canvasHeight + 5 - lengthBottom, lengthBottom, 4, ctx);
+    
+    returnVal.top = new Pipe(canvasWidth, -5, lengthTop, 4, ctx, pipeUp);
+    returnVal.bottom = new Pipe(canvasWidth, canvasHeight + 5 - lengthBottom, lengthBottom, 4, ctx, pipeBottom);
+    
     return returnVal;
 }
 
@@ -90,3 +93,11 @@ function newGame(){
     window.location.reload();
 }
 
+function loadPipes()
+{
+    pipeUp = new Image();
+    pipeUp.src = '../images/pipet.png';
+    pipeBottom = new Image();
+    pipeBottom.src = "../images/pipeb.png";
+  
+}
