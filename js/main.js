@@ -3,7 +3,7 @@ window.onload = function () {
     newgame = document.getElementById('newgame');
 
     //sizing canvas
-    c.width = window.innerWidth-18;
+    c.width = window.innerWidth;
     c.height = 700;
 
     const ctx = c.getContext('2d');
