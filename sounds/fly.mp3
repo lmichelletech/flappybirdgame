@@ -27,7 +27,7 @@
 
   <meta name="viewport" content="width=device-width">
   
-  <title>FlappyBird-in-pure-JavaScript/score.mp3 at master · loveky/FlappyBird-in-pure-JavaScript</title>
+  <title>FlappyBird-in-pure-JavaScript/fly.mp3 at master · loveky/FlappyBird-in-pure-JavaScript</title>
     <meta name="description" content="GitHub is where people build software. More than 27 million people use GitHub to discover, fork, and contribute to over 80 million projects.">
   <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
@@ -37,10 +37,10 @@
     <meta property="og:image" content="https://avatars3.githubusercontent.com/u/1198651?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="loveky/FlappyBird-in-pure-JavaScript" /><meta property="og:url" content="https://github.com/loveky/FlappyBird-in-pure-JavaScript" /><meta property="og:description" content="FlappyBird-in-pure-JavaScript - FlappyBird written in pure JavaScript!" />
 
   <link rel="assets" href="https://assets-cdn.github.com/">
-  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjU3ODY3ODA5OjhkMTJhZTA0Y2ZlNjI0NDdjMjkzZTEzYWI0MTAzOGJmYTcyYTRhNDc4MDA0MDc0MmJmNGNiZTJiOTA0MzBjYjI=--000dd06e06ec394905e4003f4d1f3cfed6cdc647">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjU3ODY3ODA5OjcwNDNmNjlhZWNjZGRkNmIwNWFlZmQyMjY5M2I5MTM2ZGNlYTFkMzBkZDFlYzk5MzU0MTVjMmYxMDJjMDM3MDI=--ca01e6262e8b3b77de0c112a2aa1814a5b30abe4">
   <meta name="pjax-timeout" content="1000">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
-  <meta name="request-id" content="CAC4:59AD:B76CF0:173D247:5AFF2099" data-pjax-transient>
+  <meta name="request-id" content="CAC4:59AD:B7641D:173C6C6:5AFF208F" data-pjax-transient>
 
 
   
@@ -52,7 +52,7 @@
   <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
     <meta name="google-analytics" content="UA-3769691-2">
 
-<meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="CAC4:59AD:B76CF0:173D247:5AFF2099" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-actor-id" content="37386658" /><meta name="octolytics-actor-login" content="lmichelletech" /><meta name="octolytics-actor-hash" content="e6f1f384e3ceffae3e81ca46b5f7cb49002105be67bfeab6e5944a85f2e683eb" />
+<meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="CAC4:59AD:B7641D:173C6C6:5AFF208F" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-actor-id" content="37386658" /><meta name="octolytics-actor-login" content="lmichelletech" /><meta name="octolytics-actor-hash" content="e6f1f384e3ceffae3e81ca46b5f7cb49002105be67bfeab6e5944a85f2e683eb" />
 <meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
 
 
@@ -67,7 +67,7 @@
     <meta name="user-login" content="lmichelletech">
 
       <meta name="expected-hostname" content="github.com">
-    <meta name="js-proxy-site-detection-payload" content="YWRlZjc4MmIwMTI0NjNhM2FlZjNmYTdhZDMwZWZjMDViNjJkNTdiZjRkN2U5NzUwM2Y5NGUzMjYzNWVlMzg3OHx7InJlbW90ZV9hZGRyZXNzIjoiNzMuODUuNDguMTI1IiwicmVxdWVzdF9pZCI6IkNBQzQ6NTlBRDpCNzZDRjA6MTczRDI0Nzo1QUZGMjA5OSIsInRpbWVzdGFtcCI6MTUyNjY2OTQ4MCwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+    <meta name="js-proxy-site-detection-payload" content="MjUyNmFhYTQyZGYxODdkZWI4YWYwMDE0M2FjYjRkZmUzZjg0YmFjYmVmNGZiZjg0NjI3MjVjNDE2ZTEwODBkZnx7InJlbW90ZV9hZGRyZXNzIjoiNzMuODUuNDguMTI1IiwicmVxdWVzdF9pZCI6IkNBQzQ6NTlBRDpCNzY0MUQ6MTczQzZDNjo1QUZGMjA4RiIsInRpbWVzdGFtcCI6MTUyNjY2OTQ2NSwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
 
     <meta name="enabled-features" content="ASYNC_NEWS_FEED,DASHBOARD_SIDEBAR_BOX_REDESIGN,UNIVERSE_BANNER,FREE_TRIALS,MARKETPLACE_INSIGHTS,MARKETPLACE_SELF_SERVE,MARKETPLACE_INSIGHTS_CONVERSION_PERCENTAGES,NEWS_FEED_EVENT_ROLLUPS,STAR_FROM_NEWS_FEED,FOLLOW_FROM_NEWS_FEED">
 
@@ -84,7 +84,7 @@
   <meta name="octolytics-dimension-user_id" content="1198651" /><meta name="octolytics-dimension-user_login" content="loveky" /><meta name="octolytics-dimension-repository_id" content="27951178" /><meta name="octolytics-dimension-repository_nwo" content="loveky/FlappyBird-in-pure-JavaScript" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="27951178" /><meta name="octolytics-dimension-repository_network_root_nwo" content="loveky/FlappyBird-in-pure-JavaScript" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
 
 
-    <link rel="canonical" href="https://github.com/loveky/FlappyBird-in-pure-JavaScript/blob/master/sounds/score.mp3" data-pjax-transient>
+    <link rel="canonical" href="https://github.com/loveky/FlappyBird-in-pure-JavaScript/blob/master/sounds/fly.mp3" data-pjax-transient>
 
 
   <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
@@ -135,7 +135,7 @@
               <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
   <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" data-scope-type="Repository" data-scope-id="27951178" data-scoped-search-url="/loveky/FlappyBird-in-pure-JavaScript/search" data-unscoped-search-url="/search" action="/loveky/FlappyBird-in-pure-JavaScript/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
     <label class="form-control header-search-wrapper  js-chromeless-input-container">
-          <a class="header-search-scope no-underline" href="/loveky/FlappyBird-in-pure-JavaScript/blob/master/sounds/score.mp3">This repository</a>
+          <a class="header-search-scope no-underline" href="/loveky/FlappyBird-in-pure-JavaScript/blob/master/sounds/fly.mp3">This repository</a>
       <input type="text"
         class="form-control header-search-input  js-site-search-focus js-site-search-field is-clearable"
         data-hotkey="s,/"
@@ -262,7 +262,7 @@
           Settings
         </a></li>
 
-        <li><!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="OmUh6KssIw9eh5bcN979aV3d3DRDxMDlHA/H8gnCMpW5W0CxGAZEoXQsouZq+Bm3Hbo93X9zw8YHJfZjMUxzlg==" />
+        <li><!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="hRmH8eHQo1AV1auUnaO2Xd2CKvwnReVkTTf5VIjSNyQGJ+aoUvrE/j9+n67AhVKDneXLFRvy5kdWHcjFsFx2Jw==" />
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -274,7 +274,7 @@
 
 
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="sr-only right-0" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="+LoAk1o+VZPDmmGgibLcVklg1bnyXeowjUAPa54hTL97hGHK6RQyPekxVZrUlDiICQc0UM7q6ROWaj76pq8NvA==" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="sr-only right-0" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="OM5uHPZsspyCkQjltgdHUDMpJpt0WkM9owiFf0ewilO78A9FRUbVMqg6PN/rIaOOc07HckjtQB64IrTufz7LUA==" />
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -310,7 +310,7 @@
 
       <ul class="pagehead-actions">
   <li>
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-autosubmit="true" data-remote="true" class="js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="PHnJFqGsL33CO2fmpGfUA1EBefAGJXEVO/4iHqhu3r1UpaPVHO5QQHc2LncT3JvUjoclZT2J3TetDUCGgULjvg==" />      <input type="hidden" name="repository_id" id="repository_id" value="27951178" class="form-control" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-autosubmit="true" data-remote="true" class="js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="L2oftp9RUGJAQIjLszTqisfzXKQjNGUaN3QOfYcwxrZHtnV1IhMvX/VNwVoEj6VdGHUAMRiYyTihh2zlrhz7tQ==" />      <input type="hidden" name="repository_id" id="repository_id" value="27951178" class="form-control" />
 
         <div class="select-menu js-menu-container js-select-menu">
           <a href="/loveky/FlappyBird-in-pure-JavaScript/subscription"
@@ -390,7 +390,7 @@
   <li>
     
   <div class="js-toggler-container js-social-container starring-container ">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/loveky/FlappyBird-in-pure-JavaScript/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="o36a5xOSBK2ZxonvR0fJrxwZvvgQZwMCzBRG4RW3qlMcse/wnf9/EgA9R65okXPAOLC2es0fKIZNqvfLms1bXQ==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/loveky/FlappyBird-in-pure-JavaScript/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="W8IbxA2WJTjolcYMfNGO8AmY48YglJwcHVMnKMOzegvkDW7Tg/teh3FuCE1TBzSfLTHrRP3st5ic7ZYCTMmLBQ==" />
       <input type="hidden" name="context" value="repository"></input>
       <button
         type="submit"
@@ -405,7 +405,7 @@
           10
         </a>
 </form>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/loveky/FlappyBird-in-pure-JavaScript/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="pE0wf+7ozjVvSPyGR4dXW/gl9VbwP8GjKLVjztpYoePvewP8GXsLfFa1PlYfOuvRx6JMnB3nT6eictuwXN7ZaQ==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/loveky/FlappyBird-in-pure-JavaScript/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="xSlOnQU/n8u+3A9mTl4P0CKwhS8EEC6eFLPwsTYr1fuOH30e8qxagochzbYW47NaHTc85enIoJqedEjPsK2tcQ==" />
       <input type="hidden" name="context" value="repository"></input>
       <button
         type="submit"
@@ -424,7 +424,7 @@
   </li>
 
   <li>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="btn-with-count" action="/loveky/FlappyBird-in-pure-JavaScript/fork" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="AgDNo+5vkifiunfRP3gSagwUnpqGlPMhL2AgsNaC8e0UIAIpDLfhYoS226ieFjPAnBaDt8L8idGpbPRQDlva4Q==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="btn-with-count" action="/loveky/FlappyBird-in-pure-JavaScript/fork" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="dq0wiKk0WZ4pyTpBcZ5qWSfklM8m6sZOWue4rMHQxkFgjf8CS+wq20/FljjQ8Evzt+aJ4mKCvL7c62xMGQntTQ==" />
             <button
                 type="submit"
                 class="btn btn-sm btn-with-count"
@@ -505,9 +505,9 @@
   <div class="repository-content ">
 
     
-  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/loveky/FlappyBird-in-pure-JavaScript/blob/e45d1873325ca80c7701c2afa7996ed01925b88a/sounds/score.mp3">Permalink</a>
+  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/loveky/FlappyBird-in-pure-JavaScript/blob/e45d1873325ca80c7701c2afa7996ed01925b88a/sounds/fly.mp3">Permalink</a>
 
-  <!-- blob contrib key: blob_contributors:v21:d85db81b70b9f7f40c188284bb79db97 -->
+  <!-- blob contrib key: blob_contributors:v21:def202ffdcace826111798c6fde19185 -->
 
   <div class="file-navigation">
     
@@ -549,7 +549,7 @@
 
 
             <a class="select-menu-item js-navigation-item js-navigation-open selected"
-               href="/loveky/FlappyBird-in-pure-JavaScript/blob/master/sounds/score.mp3"
+               href="/loveky/FlappyBird-in-pure-JavaScript/blob/master/sounds/fly.mp3"
                data-name="master"
                data-skip-pjax="true"
                rel="nofollow">
@@ -568,7 +568,7 @@
 
 
             <a class="select-menu-item js-navigation-item js-navigation-open "
-              href="/loveky/FlappyBird-in-pure-JavaScript/tree/v0.0.3/sounds/score.mp3"
+              href="/loveky/FlappyBird-in-pure-JavaScript/tree/v0.0.3/sounds/fly.mp3"
               data-name="v0.0.3"
               data-skip-pjax="true"
               rel="nofollow">
@@ -578,7 +578,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-              href="/loveky/FlappyBird-in-pure-JavaScript/tree/v0.0.2/sounds/score.mp3"
+              href="/loveky/FlappyBird-in-pure-JavaScript/tree/v0.0.2/sounds/fly.mp3"
               data-name="v0.0.2"
               data-skip-pjax="true"
               rel="nofollow">
@@ -588,7 +588,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-              href="/loveky/FlappyBird-in-pure-JavaScript/tree/v0.0.1/sounds/score.mp3"
+              href="/loveky/FlappyBird-in-pure-JavaScript/tree/v0.0.1/sounds/fly.mp3"
               data-name="v0.0.1"
               data-skip-pjax="true"
               rel="nofollow">
@@ -618,12 +618,12 @@
       </clipboard-copy>
     </div>
     <div id="blob-path" class="breadcrumb">
-      <span class="repo-root js-repo-root"><span class="js-path-segment"><a data-pjax="true" href="/loveky/FlappyBird-in-pure-JavaScript"><span>FlappyBird-in-pure-JavaScript</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/loveky/FlappyBird-in-pure-JavaScript/tree/master/sounds"><span>sounds</span></a></span><span class="separator">/</span><strong class="final-path">score.mp3</strong>
+      <span class="repo-root js-repo-root"><span class="js-path-segment"><a data-pjax="true" href="/loveky/FlappyBird-in-pure-JavaScript"><span>FlappyBird-in-pure-JavaScript</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/loveky/FlappyBird-in-pure-JavaScript/tree/master/sounds"><span>sounds</span></a></span><span class="separator">/</span><strong class="final-path">fly.mp3</strong>
     </div>
   </div>
 
 
-  <include-fragment src="/loveky/FlappyBird-in-pure-JavaScript/contributors/master/sounds/score.mp3" class="commit-tease">
+  <include-fragment src="/loveky/FlappyBird-in-pure-JavaScript/contributors/master/sounds/fly.mp3" class="commit-tease">
     <div>
       Fetching contributors&hellip;
     </div>
@@ -640,8 +640,8 @@
   <div class="file-actions">
 
     <div class="BtnGroup">
-      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/loveky/FlappyBird-in-pure-JavaScript/raw/master/sounds/score.mp3">Download</a>
-      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/loveky/FlappyBird-in-pure-JavaScript/commits/master/sounds/score.mp3">History</a>
+      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/loveky/FlappyBird-in-pure-JavaScript/raw/master/sounds/fly.mp3">Download</a>
+      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/loveky/FlappyBird-in-pure-JavaScript/commits/master/sounds/fly.mp3">History</a>
     </div>
 
         <a class="btn-octicon tooltipped tooltipped-nw"
@@ -651,7 +651,7 @@
             <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
         </a>
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/loveky/FlappyBird-in-pure-JavaScript/delete/master/sounds/score.mp3" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="m2iot5nl0h4fgz8uuxhJXlMa5XiGHDS+p8/jL9vc18PyKgojLxuLtOVHv7o32HJgw35XH8zrz/JZb9LZrcEjkg==" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/loveky/FlappyBird-in-pure-JavaScript/delete/master/sounds/fly.mp3" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="/N6SyLExImaZgKfjGzbsLnFPlwFHHH1pbqGGMWBRc6us+t6aOeTe2rB+YWm1EulXR9SHxuhjC2L8dJDR1wyXXA==" />
           <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
             aria-label="Fork this project and delete the file" data-disable-with>
             <svg class="octicon octicon-trashcan" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
@@ -659,7 +659,7 @@
 </form>  </div>
 
   <div class="file-info">
-    16.4 KB
+    5.75 KB
   </div>
 </div>
 
@@ -667,7 +667,7 @@
 
   <div itemprop="text" class="blob-wrapper data type-text">
       <div class="image">
-          <a href="/loveky/FlappyBird-in-pure-JavaScript/blob/master/sounds/score.mp3?raw=true">View Raw</a>
+          <a href="/loveky/FlappyBird-in-pure-JavaScript/blob/master/sounds/fly.mp3?raw=true">View Raw</a>
       </div>
   </div>
 
@@ -694,7 +694,7 @@
 <div class="footer container-lg px-3" role="contentinfo">
   <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
     <ul class="list-style-none d-flex flex-wrap ">
-      <li class="mr-3">&copy; 2018 <span title="0.41870s from unicorn-4214131255-qc57l">GitHub</span>, Inc.</li>
+      <li class="mr-3">&copy; 2018 <span title="0.31029s from unicorn-230591029-kv24f">GitHub</span>, Inc.</li>
         <li class="mr-3"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
         <li class="mr-3"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
         <li class="mr-3"><a href="https://help.github.com/articles/github-security/" data-ga-click="Footer, go to security, text:security">Security</a></li>

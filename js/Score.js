@@ -4,11 +4,10 @@ const Score = function (bird, pipes, c, ctx) {
     this.bird = bird;
     this.pipes = pipes;
     this.c = c;
-    this.ctx = ctx;  
-    
+    this.ctx = ctx;
 }
 
-Score.prototype.update = function (pipes, scoresound) {
+Score.prototype.update = function (pipes) {
     this.pipes.forEach((pipes, i) => {
         //bird passed pipe
         if (this.bird.x > pipes.xpos + pipes.width &&
@@ -16,8 +15,8 @@ Score.prototype.update = function (pipes, scoresound) {
             // console.log('Passed Pipe');
             pipes.passed = true;
             this.score += 0.5;
-            scoresound.play()
         }
+        
     });
 }
 

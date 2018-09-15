@@ -1,7 +1,7 @@
 {
-  "name": "flappybirdgame",
+  "name": "flappybirdvdo",
   "version": "1.0.0",
-  "description": "flappy bird game example",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "reload -b",

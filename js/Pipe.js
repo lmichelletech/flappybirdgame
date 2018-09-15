@@ -1,25 +1,24 @@
-const Pipe = function(xpos, ypos, length, speed, ctx, pipe){
+const Pipe = function(xpos, ypos, length, speed, ctx){
     this.ypos = ypos;
     this.xpos = xpos;
     this.length = length;
     this.ctx = ctx;
     this.speed = speed;
-    this.width = 104;
+    this.width = 150;
     this.passed = false;
-    this.pipe = pipe;
 }
 
-  
 Pipe.prototype.update = function(){
     this.xpos -= this.speed;
 }
 
-//context.drawImage(image, sx, sy, sw, sh, dx, dy, dw, dh)
-//context.drawImage(image, dx, dy, dw, dh)
-//context.drawImage(image, dx, dy)
 Pipe.prototype.render = function(){
     this.ctx.save();
-    this.ctx.drawImage(this.pipe, this.xpos, this.ypos, this.width, this.length);
+    this.ctx.fillStyle = "#000000";
+    //x, y, w, h
+    this.ctx.fillRect(this.xpos,this.ypos, this.width, this.length);
+    this.ctx.fillStyle = "#74BF2E";
+    this.ctx.fillRect(this.xpos+5,this.ypos+5, this.width-10, this.length-10);
     this.ctx.restore();
     
 }
