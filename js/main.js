@@ -1,21 +1,18 @@
-//can use the following window onload 
-//hack with html img tag to load images
-//the way I used it hear
 window.onload = function () {
     const c = document.getElementById('canvas');
     newgame = document.getElementById('newgame');
 
-    //avoid sizing canvas with css. Use javascript.
-    c.width = window.innerWidth;
-    c.height = 600;
+    //sizing canvas
+    c.width = window.innerWidth-18;
+    c.height = 700;
 
-    //object interface that has methods for communicating between canvas and graphic card
     const ctx = c.getContext('2d');
     
     const environment = new Environment(c, ctx);
+    
     const bird = new Bird(300, 300, ctx);
     const theme = new Audio();
-    theme.src = "../sounds/theme.mp3";
+    theme.src = "./sounds/theme.mp3";
     
     const pipes = [];
     let pipeSet = generateRandomPipes(ctx, c.width, c.height);
@@ -32,7 +29,8 @@ window.onload = function () {
     /*
        Main Game Loop
     */
-    function gameLoop() {
+    function gameLoop() 
+    {
         bird.update(pipes);
 
         if (!bird.dead) {
@@ -60,7 +58,6 @@ window.onload = function () {
             
         } 
          
-        
         window.requestAnimationFrame(gameLoop);
     }
 };
@@ -75,13 +72,9 @@ function generateRandomPipes(ctx, canvasWidth, canvasHeight) {
 }
 
 function drawGameOver(ctx, c) {
-    // ctx.font = "30px Verdana";
-    // ctx.textAlign = "center";
-    // ctx.fillText("Game Over!!", c.width / 2, c.height / 2);
-
     var gameover = document.createElement("div");
     gameover.classList.add('gameover-container');
-    gameover.setAttribute("style", `position: absolute; z-index: 99; top: ${(c.height/2) - 150}px; left: ${(c.width/2)-150}px; width: 300px; height: 300px; background: url(../images/flappygameover.jpg);`);
+    gameover.setAttribute("style", `position: absolute; z-index: 99; top: ${(c.height/2) - 150}px; left: ${(c.width/2)-150}px; width: 300px; height: 300px; background: url(./images/flappygameover.jpg);`);
     document.body.appendChild(gameover);
     
 }

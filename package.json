@@ -1,7 +1,7 @@
 {
-  "name": "flappybirdvdo",
+  "name": "flappybirdgame",
   "version": "1.0.0",
-  "description": "",
+  "description": "flappy bird game example",
   "main": "index.js",
   "scripts": {
     "start": "reload -b",
@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "reload": "^2.2.2"
+    "reload": "^2.3.1"
   },
   "dependencies": {
     "restart": "^0.1.0"

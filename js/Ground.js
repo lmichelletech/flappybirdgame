@@ -18,5 +18,5 @@ Ground.prototype.update = function(){
 
 Ground.prototype.render = function(){
     for(let i = 0; i <= this.c.width/this.groundWidth+1; i++)
-    this.ctx.drawImage(this.groundImg, this.bgPos+i*this.groundWidth, 500);
+    this.ctx.drawImage(this.groundImg, this.bgPos+i*this.groundWidth, 700);
 };

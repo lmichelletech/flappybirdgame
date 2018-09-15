@@ -12,7 +12,7 @@ Score.prototype.update = function (pipes) {
         //bird passed pipe
         if (this.bird.x > pipes.xpos + pipes.width &&
         !pipes.passed) {
-            // console.log('Passed Pipe');
+            
             pipes.passed = true;
             this.score += 0.5;
         }

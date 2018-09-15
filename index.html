@@ -8,9 +8,18 @@
     <style>
     body{padding: 0; margin: 0;}
     img{display: none;}
+    #trees{
+        position: absolute; bottom: 0px; left: 0; z-index: 999;
+        background-image: url("images/treesbg.png");
+        min-width: 100%;
+        min-height: 200px;
+    }
     #newgame{
         text-align: center; 
-        position: absolute; top:400px; left:48%;
+        position: absolute; 
+        top: 400px; 
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
         padding: 10px;
         font-size: 16px;
         display: none;
@@ -26,7 +35,7 @@
     <img src='images/bird3.png' id='bird3'>
     <img src='images/bg.png' id='bg'>
     <button id="newgame" type="submit" onclick="newGame()">New Game</button>
-
+    <div id='trees'></div>
     <script src="js/Pipe.js"></script>
     <script src="js/Bird.js"></script>
     <script src="js/Environment.js"></script>
